@@ -22,7 +22,7 @@ public class Postagem {
 	
 	@NotNull
 	@Size(min = 5, max = 100)
-	private String título;
+	private String titulo;
 	
 	@NotNull
 	@Size(min = 10, max = 500)
@@ -30,17 +30,19 @@ public class Postagem {
 	
 	@Temporal(TemporalType.TIMESTAMP)
 	private Date date = new java.sql.Date(System.currentTimeMillis());
+	
+	
 	public long getId() {
 		return id;
 	}
 	public void setId(long id) {
 		this.id = id;
 	}
-	public String getTítulo() {
-		return título;
+	public String getTitulo() {
+		return titulo;
 	}
-	public void setTítulo(String título) {
-		this.título = título;
+	public void setTitulo(String titulo) {
+		this.titulo = titulo;
 	}
 	public String getTexto() {
 		return texto;
