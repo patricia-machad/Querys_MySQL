@@ -7,8 +7,8 @@ import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
 public class UserDetailsImpl implements UserDetails {
-	
-	private static final long serialVersionUID = 1L;
+
+	private static final long SerialVersionUID = 1L;
 	
 	private String userName;
 	private String password;
@@ -17,10 +17,10 @@ public class UserDetailsImpl implements UserDetails {
 		this.userName = user.getUsuario();
 		this.password = user.getSenha();
 	}
-	public UserDetailsImpl() {
-		
-	}
+	
+	public UserDetailsImpl() {}
 
+	
 	@Override
 	public Collection<? extends GrantedAuthority> getAuthorities() {
 		// TODO Auto-generated method stub
